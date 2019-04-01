@@ -1,0 +1,21 @@
+import { Directive, OnInit, HostBinding, HostListener } from '@angular/core';
+
+@Directive({
+  selector: '[appHighLight]'
+})
+export class HighLightDirective {
+  @HostBinding('style.backgroundColor') myBackgroundColor: string;
+
+  constructor() { }
+
+  ngOnInit() { }
+
+  @HostListener('mouseenter') mouseEnterEvent (eventData: Event) {
+    this.myBackgroundColor = 'yellow';
+  }
+
+  @HostListener ('mouseleave') mouseLeaveEvent (eventData: Event) {
+    this.myBackgroundColor = 'transparent';
+  }
+
+}
