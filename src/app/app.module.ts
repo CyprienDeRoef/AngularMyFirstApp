@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FormsModule } from '@angular/forms';
 import { FilmListComponent } from './film-list/film-list.component';
 import { HighLightDirective } from './high-light.directive';
@@ -15,7 +14,6 @@ import { ROUTES } from './app.routes';
   declarations: [
     AppComponent,
     SignUpComponent,
-    UserProfileComponent,
     FilmListComponent,
     HighLightDirective,
     MenuComponent
