@@ -9,6 +9,7 @@ import { HighLightDirective } from './high-light.directive';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { SearchMovieComponent } from './search-movie/search-movie.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ROUTES } from './app.routes';
     SignUpComponent,
     FilmListComponent,
     HighLightDirective,
-    MenuComponent
+    MenuComponent,
+    SearchMovieComponent
   ],
   imports: [
     BrowserModule,
